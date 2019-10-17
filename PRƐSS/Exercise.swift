@@ -10,7 +10,7 @@ import Foundation
 
 class Exercise{
     var dateCompleted: Date
-    //var name: Lift
+    var name: String
 //    var sets: Int
     var reps: Int
     var weight: Int
