@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Exercise{
+class Exercise {
     var dateCompleted: Date
     var name: String
 //    var sets: Int

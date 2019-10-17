@@ -12,7 +12,7 @@ class User{
     var userID: String
     var firstName: String
     var lastName: String
-    var password: String
+    var password: String 
     var email: String
     var coach: Bool
     

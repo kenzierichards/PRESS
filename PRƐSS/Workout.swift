@@ -6,7 +6,7 @@
 //  Copyright © 2019 PRƐSS Dev Team. All rights reserved.
 //
 
-import Foundation
+import Foundation 
 
 class Workout{
    // array of lifts
