@@ -9,10 +9,20 @@
 import Foundation 
 
 class Workout{
-   // array of lifts
-    
+   
+    // array of lifts
+    var lifts: [String] = []
+    var dateCompleted: Date
     
     //init
+    init(date: Date){
+        self.dateCompleted = date
+    }
+    
+
+    func getDate() -> Date {
+        return dateCompleted
+    }
     
     //sendToDB(user, dateTime, lifts[])
 }
