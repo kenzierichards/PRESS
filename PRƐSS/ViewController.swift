@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txtUsername: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,11 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//hvguyfdusytex
-    @IBAction func btnPageOne(_ sender: UIButton) {
-        view.backgroundColor = .red
+    
+    @IBAction func loginBtnPressed(_ sender: UIButton) {
+        var username: String? = txtUsername.text
+        var password: String? = txtPassword.text
+        
+        //Check in DB if this user exists
     }
     
-
 }
 

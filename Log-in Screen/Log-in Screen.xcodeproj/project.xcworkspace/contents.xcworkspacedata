@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../PR&#x190;SSTests">
-   </FileRef>
-   <FileRef
-      location = "self:">
+      location = "self:Log-in Screen.xcodeproj">
    </FileRef>
 </Workspace>
