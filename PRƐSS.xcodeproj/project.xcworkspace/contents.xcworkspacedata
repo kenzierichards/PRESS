@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PR&#x190;SS.xcodeproj">
+      location = "group:../PR&#x190;SSTests">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
