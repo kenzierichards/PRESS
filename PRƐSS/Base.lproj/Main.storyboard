@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="Hdf-h8-hVe">
             <objects>
-                <viewController id="6cd-Oj-hVT" sceneMemberID="viewController">
+                <viewController id="6cd-Oj-hVT" customClass="ViewController" customModule="PRƐSS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6AQ-OY-4rS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
         <!--View Controller-->
         <scene sceneID="DKl-1h-HVl">
             <objects>
-                <viewController id="6Dp-LQ-C9c" sceneMemberID="viewController">
+                <viewController id="6Dp-LQ-C9c" customClass="ViewController" customModule="PRƐSS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zCB-ir-WBk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,44 +85,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="10h-sS-w6k">
-                                <rect key="frame" x="91" y="233" width="193" height="34"/>
+                                <rect key="frame" x="91" y="214" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-X5-Om4">
-                                <rect key="frame" x="91" y="316" width="193" height="34"/>
+                                <rect key="frame" x="91" y="289" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMW-nv-VTl">
-                                <rect key="frame" x="91" y="396" width="193" height="34"/>
+                                <rect key="frame" x="91" y="367" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coach (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-0c-jcZ">
-                                <rect key="frame" x="91" y="473" width="193" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tdo-0c-jcZ">
+                                <rect key="frame" x="91" y="443" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-Ax-NMK">
-                                <rect key="frame" x="146" y="578" width="61" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Let's Go!"/>
-                                <connections>
-                                    <segue destination="1U7-Yb-RJd" kind="show" id="Cq8-L3-mzj"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="^add popover w/ info about linking to coach" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ce-SU-KlN">
-                                <rect key="frame" x="21" y="521" width="332" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5A-fi-fzd">
                                 <rect key="frame" x="-31" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -130,11 +115,33 @@
                                     <navigationItem title="Coach Registration" id="jYm-RP-wal"/>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zSa-we-PMQ">
+                                <rect key="frame" x="91" y="536" width="193" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RB-Ax-NMK">
+                                <rect key="frame" x="146" y="597" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Let's Go!"/>
+                                <connections>
+                                    <action selector="btnCoachRegisterPressed:" destination="6Dp-LQ-C9c" eventType="touchUpInside" id="8Dv-rK-jVZ"/>
+                                    <segue destination="1U7-Yb-RJd" kind="show" id="Cq8-L3-mzj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ymu-xY-sR5"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZIK-AM-jQD"/>
+                    <connections>
+                        <outlet property="txtEmailCoach" destination="10h-sS-w6k" id="GiP-9p-uSP"/>
+                        <outlet property="txtFirstNameCoach" destination="tdo-0c-jcZ" id="T8C-Wo-mEL"/>
+                        <outlet property="txtLastNameCoach" destination="zSa-we-PMQ" id="vb3-va-hSo"/>
+                        <outlet property="txtPasswordCoach" destination="nMW-nv-VTl" id="YNY-yR-n5N"/>
+                        <outlet property="txtUsernameCoach" destination="3jd-X5-Om4" id="1Mv-Bi-JNq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Fq-dk-JfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,7 +150,7 @@
         <!--View Controller-->
         <scene sceneID="dKl-cL-0XO">
             <objects>
-                <viewController id="mfK-SS-leb" sceneMemberID="viewController">
+                <viewController id="mfK-SS-leb" customClass="ViewController" customModule="PRƐSS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aOO-d9-V0C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,49 +174,57 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jZ-fY-zYP">
-                                <rect key="frame" x="97" y="233" width="193" height="34"/>
+                                <rect key="frame" x="97" y="220" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c62-Ck-jw7">
-                                <rect key="frame" x="97" y="316" width="193" height="34"/>
+                                <rect key="frame" x="97" y="306" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1NZ-kA-hvS">
-                                <rect key="frame" x="97" y="396" width="193" height="34"/>
+                                <rect key="frame" x="97" y="379" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Coach (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysM-aK-ipu">
-                                <rect key="frame" x="97" y="473" width="193" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysM-aK-ipu">
+                                <rect key="frame" x="97" y="454" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAL-jU-YuQ">
-                                <rect key="frame" x="152" y="578" width="61" height="30"/>
+                                <rect key="frame" x="152" y="597" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Let's Go!"/>
                                 <connections>
+                                    <action selector="btnAthleteRegister:" destination="mfK-SS-leb" eventType="touchUpInside" id="WWM-5a-CTN"/>
+                                    <action selector="btnAthleteRegisterPressed:" destination="mfK-SS-leb" eventType="touchUpInside" id="3Eh-Ou-oju"/>
                                     <segue destination="1U7-Yb-RJd" kind="show" id="CY6-qw-NrP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="^add popover w/ info about linking to coach" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvy-BP-wg0">
-                                <rect key="frame" x="27" y="521" width="332" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCR-JR-Hg4">
+                                <rect key="frame" x="97" y="536" width="193" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="oYA-Ri-T1K"/>
                     </view>
                     <navigationItem key="navigationItem" id="vjz-ov-0V1"/>
+                    <connections>
+                        <outlet property="txtEmailAthlete" destination="0jZ-fY-zYP" id="4tK-FT-pGi"/>
+                        <outlet property="txtFirstNameAthlete" destination="ysM-aK-ipu" id="vcb-gc-Wrx"/>
+                        <outlet property="txtLastNameAthlete" destination="fCR-JR-Hg4" id="lnq-8M-Uqf"/>
+                        <outlet property="txtPasswordAthlete" destination="1NZ-kA-hvS" id="0aV-Oc-adW"/>
+                        <outlet property="txtUsernameAthlete" destination="c62-Ck-jw7" id="kHi-Ai-xrx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcL-PM-UFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -42,4 +42,10 @@ class User{
         password = newPassword
     }
     
+    func newUser(_ email: String, _ username: String, _ password: String, _ firstName : String, _ lastName : String){
+        
+        let newUser = User(userID: username, firstName: firstName, lastName: lastName, email: email, coach: false, password: password)
+        
+        
+    }
 }
