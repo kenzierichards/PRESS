@@ -55,9 +55,10 @@ class ViewController: UIViewController {
     @IBAction func btnAthleteRegister(_ sender: UIButton) {
         
         let email = txtEmailAthlete.text
-        let username = txtUsername.text
+        let username = txtUsernameAthlete.text
         let password = txtPasswordAthlete.text
-        
+        let firstName = txtFirstNameAthlete.text
+        let lastName = txtLastNameAthlete.text
     }
     
     
@@ -71,32 +72,41 @@ class ViewController: UIViewController {
     
     
     @IBAction func btnAthleteRegisterPressed(_ sender: UIButton) {
-        let email = txtEmailAthlete.text
-        let username = txtUsernameAthlete.text
-        let password = txtPasswordAthlete.text
-        let firstName = txtFirstNameAthlete.text
-        let lastName = txtLastNameAthlete.text
+        let email: String? = txtEmailAthlete.text
+        let username: String? = txtUsernameAthlete.text
+        let password: String? = txtPasswordAthlete.text
+        let firstName: String? = txtFirstNameAthlete.text
+        let lastName: String? = txtLastNameAthlete.text
         
-        //var topLevel: [AnyObject] = []
         
-        var tempJSON : [String: String] = [:]
+    
+        var dictionary : [String?: String?] = [
+            "username" : username,
+            "firstName" : firstName,
+            "lastName" : lastName,
+            "password" : password,
+            "email" : email
+        ]
         
-        tempJSON["username"] = username
-        tempJSON["firstName"] = firstName
-        tempJSON["lastName"] = lastName
-        tempJSON["password"] = password
-        tempJSON["email"] = email
+        let file : FileHandle? = FileHandle(forWritingAtPath: "/Users/ryanhebert/Desktop/users.json")
         
-        //topLevel.append(tempJSON)
         
-        let data = try JSONSerialization()
-        
-//        let tempUser = User(userID: username, firstName: firstName, lastName: lastName, email: email, coach: false, password: password)
-//
-        //User.newUser(tempUser)
-        
-//        newUser(email, username, password, firstName, lastName)
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: dictionary, options: .prettyPrinted)
+            let decoded = try JSONSerialization.jsonObject(with: jsonData, options: [])
+            if let dictFromJSON = decoded as? [String? : String?] {
+                file?.write(decoded as! Data)
+                print(dictFromJSON)
+            }
+           file?.closeFile()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
+
+//        file?.closeFile()
+
+        
     
     @IBAction func btnCoachRegisterPressed(_ sender: UIButton) {
         
@@ -106,9 +116,6 @@ class ViewController: UIViewController {
         let firstName = txtFirstNameCoach.text
         let lastName = txtLastNameCoach.text
     }
-    
-    
-    
     
 }
 

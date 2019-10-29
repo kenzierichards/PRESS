@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User{
+class User : Decodable{
     var userID: String
     var firstName: String
     var lastName: String
@@ -38,14 +38,56 @@ class User{
         return email
     }
     
-    func changePassword(newPassword: String){
-        password = newPassword
-    }
+//    func changePassword(newPassword: String){
+//        password = newPassword
+//    }
     
-    func newUser(_ email: String, _ username: String, _ password: String, _ firstName : String, _ lastName : String){
+    func newUser(_ email: String, _ username: String, _ password: String, _ firstName : String, _ lastName : String, _ yea: Int){
         
         let newUser = User(userID: username, firstName: firstName, lastName: lastName, email: email, coach: false, password: password)
         
         
+        var dictionary : [String: String] = [
+            "username" : userID,
+            "firstName" : firstName,
+            "lastName" : lastName,
+            "password" : password,
+            "email" : email
+        ]
+        
+        let file: FileHandle? = FileHandle(forWritingAtPath: "document.json")
+        
+        do {
+            if let jsonData = try JSONSerialization.data(withJSONObject: "document", options: .init(rawValue: 0)) as? Data {
+                print(NSString(data: jsonData, encoding: 1)!)
+                file?.write(jsonData)
+            }
+        }
+        catch {
+            
+        }
+        file?.closeFile()
+        //file?.write(dictionary)
+        
+        //print(NSString(data: jsonData, encoding: 1)!)
+        
+    
     }
 }
+
+
+
+
+
+
+   //let fileName = "document"
+//        let url = Bundle.main.url(forResource: fileName, withExtension: "json")
+//
+//
+//
+////        var fileS : URL = "https://github.com/kenzierichards/PRESS/blob/master/document.json"
+////
+////
+//        let decoder = JSONDecoder()
+//        let data = try Data(contentsOf: <#T##URL#>)
+//        try decoder.decode(User.self, from: data)
