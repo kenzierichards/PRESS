@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FileProvider
 import Foundation
 
 class ViewController: UIViewController {
@@ -41,9 +42,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtLastNameCoach: UITextField!
     
     
+    var topLevel : [String? : String?] = [ "users" : "", "lifts" : "", "workouts" : ""]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //var topLevel : [String? : String?] = [:]
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,7 +87,7 @@ class ViewController: UIViewController {
         
         
     
-        var dictionary : [String?: String?] = [
+        var userDictionary : [String?: String?] = [
             "username" : username,
             "firstName" : firstName,
             "lastName" : lastName,
@@ -88,23 +95,56 @@ class ViewController: UIViewController {
             "email" : email
         ]
         
-        let file : FileHandle? = FileHandle(forWritingAtPath: "/Users/ryanhebert/Desktop/users.json")
+        var jsString : String = ""
+        jsString += ",\n{"
         
         
-        do {
-            let jsonData = try JSONSerialization.data(withJSONObject: dictionary, options: .prettyPrinted)
-            let decoded = try JSONSerialization.jsonObject(with: jsonData, options: [])
-            if let dictFromJSON = decoded as? [String? : String?] {
-                file?.write(decoded as! Data)
-                print(dictFromJSON)
-            }
-           file?.closeFile()
-        } catch {
-            print(error.localizedDescription)
+        for (key,val) in userDictionary {
+            jsString = jsString + "\n\"" + (key ?? "key")
+            jsString = jsString + "\" : \"" + (val ?? "value") + "\",\n"
         }
+        jsString += "},\n"
+        //print(jsString)
+        var oldString : String = Array(topLevel)[0].value ?? ""
+        oldString += jsString
+        topLevel.updateValue(oldString, forKey: "users")
+        
+        for (key, val) in topLevel{
+            print((key ?? "") + " - " + (val ?? ""))
+        }
+          
+        fileWriteTopLevel()
+          
     }
+    
+    
+  
+    func fileWriteTopLevel(){
+        var str = "{\n"
+         for (key, val) in topLevel{
+            str += (key ?? "") + " : [\n"
+            str += val ?? ""
+            str += "],\n"
+        }
 
-//        file?.closeFile()
+        str.remove(at: str.index(before: str.endIndex))
+        str.remove(at: str.index(before: str.endIndex))
+
+        let file = "/Volumes/SSD/PRƐSS/git/PRESS/js.json"
+        do{
+            try str.write(toFile: file, atomically: false, encoding: String.Encoding.utf8)
+        }
+        catch let error as NSError{
+            // add logging
+            var a = 1
+        }
+//
+    }
+    
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
 
         
     

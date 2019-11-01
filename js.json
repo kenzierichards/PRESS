@@ -1,0 +1,19 @@
+{
+lifts : [
+],
+workouts : [
+],
+users : [
+,
+{
+"lastName" : "Tester",
+
+"username" : "testUSer",
+
+"firstName" : "Test",
+
+"password" : "testPw",
+
+"email" : "test@mail.com",
+},
+]
