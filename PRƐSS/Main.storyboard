@@ -15,47 +15,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdT-UK-MOl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="323"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ATHLETE"/>
-                                <connections>
-                                    <segue destination="mfK-SS-leb" kind="show" id="M3g-Xa-PbD"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have clients you will be sending workouts to." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGX-cb-6gX">
-                                <rect key="frame" x="124" y="388" width="236" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are a casual lifter or have a personal trainer to tell you what to do." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdM-Ae-jWg">
-                                <rect key="frame" x="95" y="164" width="202" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCn-5X-0Gm">
-                                <rect key="frame" x="20" y="364" width="375" height="328"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCn-5X-0Gm">
+                                <rect key="frame" x="0.0" y="421" width="414" height="421"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="EuY-dg-Wo2"/>
+                                    <constraint firstAttribute="height" constant="421" id="bze-IF-U6C"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="COACH"/>
                                 <connections>
                                     <segue destination="6Dp-LQ-C9c" kind="show" id="orT-Mr-Prx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdT-UK-MOl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="hL9-QZ-uCN"/>
+                                    <constraint firstAttribute="height" constant="420" id="ois-vb-Jnt"/>
+                                </constraints>
+                                <state key="normal" title="ATHLETE"/>
+                                <connections>
+                                    <segue destination="mfK-SS-leb" kind="show" id="M3g-Xa-PbD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have clients you will be sending workouts to." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGX-cb-6gX">
+                                <rect key="frame" x="50" y="621" width="314" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="AvO-oL-5hI"/>
+                                    <constraint firstAttribute="width" constant="314" id="QGL-mi-i2d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are a casual lifter or have a personal trainer to tell you what to do." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdM-Ae-jWg">
+                                <rect key="frame" x="50" y="199" width="314" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="Ei9-Rk-Fwe"/>
+                                    <constraint firstAttribute="height" constant="121" id="cSU-os-Z4R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CdM-Ae-jWg" firstAttribute="leading" secondItem="w4s-D6-fZf" secondAttribute="leading" constant="50" id="5Xu-5k-Osr"/>
+                            <constraint firstItem="w4s-D6-fZf" firstAttribute="trailing" secondItem="CdM-Ae-jWg" secondAttribute="trailing" constant="50" id="785-WT-A1H"/>
+                            <constraint firstItem="wdT-UK-MOl" firstAttribute="trailing" secondItem="MCn-5X-0Gm" secondAttribute="trailing" id="8Fh-sf-IdD"/>
+                            <constraint firstItem="wdT-UK-MOl" firstAttribute="top" secondItem="w4s-D6-fZf" secondAttribute="top" id="Qj4-SF-GEY"/>
+                            <constraint firstItem="nGX-cb-6gX" firstAttribute="firstBaseline" secondItem="MCn-5X-0Gm" secondAttribute="baseline" id="ZeF-Xa-aZQ"/>
+                            <constraint firstItem="w4s-D6-fZf" firstAttribute="trailing" secondItem="nGX-cb-6gX" secondAttribute="trailing" constant="50" id="ZpO-aS-KRz"/>
+                            <constraint firstItem="nGX-cb-6gX" firstAttribute="leading" secondItem="CdM-Ae-jWg" secondAttribute="leading" id="dm7-Ab-Xy1"/>
+                            <constraint firstItem="nGX-cb-6gX" firstAttribute="trailing" secondItem="CdM-Ae-jWg" secondAttribute="trailing" id="eyC-iu-aBW"/>
+                            <constraint firstItem="MCn-5X-0Gm" firstAttribute="top" secondItem="wdT-UK-MOl" secondAttribute="bottom" constant="1" id="jYO-3S-VE1"/>
+                            <constraint firstItem="CdM-Ae-jWg" firstAttribute="top" secondItem="w4s-D6-fZf" secondAttribute="top" constant="199" id="m5x-GJ-vEK"/>
+                            <constraint firstItem="nGX-cb-6gX" firstAttribute="leading" secondItem="w4s-D6-fZf" secondAttribute="leading" constant="50" id="nyd-sV-BV9"/>
+                            <constraint firstItem="wdT-UK-MOl" firstAttribute="leading" secondItem="MCn-5X-0Gm" secondAttribute="leading" id="phN-7W-gTv"/>
+                            <constraint firstItem="wdT-UK-MOl" firstAttribute="centerX" secondItem="6AQ-OY-4rS" secondAttribute="centerX" id="w6D-UX-LIi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w4s-D6-fZf"/>
                     </view>
                     <navigationItem key="navigationItem" id="A0c-2y-ThN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WW-5E-YEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="637"/>
+            <point key="canvasLocation" x="592.75362318840587" y="636.83035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DKl-1h-HVl">
