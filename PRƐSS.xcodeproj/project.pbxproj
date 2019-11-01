@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2C987B6236938A90033CB44 /* buttonsetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C987B5236938A90033CB44 /* buttonsetup.swift */; };
 		FF1427842363634600D28F5B /* PRƐSSTests in Resources */ = {isa = PBXBuildFile; fileRef = FF1427832363634600D28F5B /* PRƐSSTests */; };
 		FF200D5B233E81390066F1C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF200D5A233E81390066F1C8 /* AppDelegate.swift */; };
 		FF200D5D233E81390066F1C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF200D5C233E81390066F1C8 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2C987B5236938A90033CB44 /* buttonsetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonsetup.swift; sourceTree = "<group>"; };
 		FF1427832363634600D28F5B /* PRƐSSTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "PRƐSSTests"; sourceTree = "<group>"; };
 		FF200D57233E81390066F1C8 /* PRƐSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PRƐSS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF200D5A233E81390066F1C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		FF200D4E233E81390066F1C8 = {
 			isa = PBXGroup;
 			children = (
+				F2C987B5236938A90033CB44 /* buttonsetup.swift */,
 				FF200D59233E81390066F1C8 /* PRƐSS */,
 				FF200D79233E81390066F1C8 /* PRƐSSUITests */,
 				FF200D58233E81390066F1C8 /* Products */,
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C987B6236938A90033CB44 /* buttonsetup.swift in Sources */,
 				FF200D5D233E81390066F1C8 /* ViewController.swift in Sources */,
 				FF72A6DF2357DCDB00FB797D /* Exercise.swift in Sources */,
 				FF72A6E32357DDB800FB797D /* Superset.swift in Sources */,
